@@ -10,7 +10,7 @@ In this we are going to use three diffrent Regression Models:
 - [Random Forest Regression](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
 - [Lasso Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html)
 
-
+![](images/boston_houses.jpg)
 
 ## Boston-Housing dataset
 ---
@@ -49,6 +49,21 @@ Before attempting to fit a linear model to observed data, a modeler should first
 A Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap Aggregation, commonly known as bagging.
 
 The basic idea behind this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees. If you want to read more on Random Forests, I have included some reference links which provide in depth explanations on this topic.
+
+## Lasso Regression 
+
+LASSO stands for Least Absolute Shrinkage and Selection Operator. I know it doesn’t give much of an idea but there are 2 key words here – ‘absolute‘ and ‘selection‘.
+
+Lets consider the former first and worry about the latter later.
+
+Lasso regression performs L1 regularization, i.e. it adds a factor of sum of absolute value of coefficients in the optimization objective. Thus, lasso regression optimizes the following:
+
+Objective = RSS + α * (sum of absolute value of coefficients)
+Here, α (alpha) works similar to that of ridge and provides a trade-off between balancing RSS and magnitude of coefficients. Like that of ridge, α can take various values. Lets iterate it here briefly:
+
+α = 0: Same coefficients as simple linear regression
+α = ∞: All coefficients zero (same logic as before)
+0 < α < ∞: coefficients between 0 and that of simple linear regression
 
 
 ## Install
