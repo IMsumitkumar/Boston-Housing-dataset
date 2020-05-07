@@ -1,4 +1,4 @@
-# Boston House Dataset-Regression
+# Boston Housing Dataset-Regression
 
 `This project applies basic machine learning concepts on data collected for
 housing prices in the Boston, Massachusetts area to predict the selling price of a
